@@ -1,44 +1,48 @@
 import React from "react";
-import logo from './TDapp logo.png';
+import logo from '../Img/Logo/TDapp logo.png';
 import { Container, Nav, Navbar } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 const logoStyle = {
-    height: '7vmin',
-    paddingLeft: '1vmin'
+    maxHeight: '50px',
+    paddingLeft: '2vmin'
     
 }
 
 const linkStyle = {
     color: 'white',
-    fontSize: '18px'
+    minFontSize: '5px',
+    maxFontSize: '18px',
+    paddingLeft: '20px',
+    justifyContent: 'end'
 }
 
 const barStyle = {
-    backgroundColor: '#27273f',
-    width: '100%'
+    backgroundColor: '#292926',
+    minWidth: '100%',
+    jusifyContent: 'end'
 }
 
 const mugClubText = 'Mug\u00A0Club'  //unicode is RAD!!! learn more
+const contactUsText = 'Contact\u00A0Us'
 
 export default function NavBar() {
     return (     
-        <Navbar style={barStyle}>
+        <Navbar expand='md' style={barStyle} variant='dark'>
             <Navbar.Brand>
-                    <img src={logo} style={logoStyle}/>
+                    <img src={logo} alt="Torys Diner Logo" style={logoStyle}/>
             </Navbar.Brand> 
-
-            <Container style={{marginLeft: 0}}>
-                <Nav.Link href='#Home'          style={linkStyle}>Home</Nav.Link>
-                <Nav.Link href='#Menu'          style={linkStyle}>Menu</Nav.Link>
-                <Nav.Link href='#Reservations'  style={linkStyle}>Reservations</Nav.Link>
-                <Nav.Link href='#MugClub'       style={linkStyle}>{mugClubText}</Nav.Link>   
-            </Container>
-            <Container></Container>
-            <Container style={{justifyContent: 'end'}}>
-                <Nav.Link href='#Contact' style={linkStyle}>Contact</Nav.Link>
-            </Container>
+            <Navbar.Toggle style={{justifyContent: 'end', marginRight: '20px'}}/>
+            <Navbar.Collapse >
+                <Nav >
+                    <Nav.Link href='#About'          style={linkStyle}>About</Nav.Link>
+                    <Nav.Link href='#Menu'          style={linkStyle}>Menu</Nav.Link>
+                    <Nav.Link href='#Reservations'  style={linkStyle}>Reservations</Nav.Link>
+                    <Nav.Link href='#MugClub'       style={linkStyle}>{mugClubText}</Nav.Link>   
+                    <Nav.Link href='#Contact' style={linkStyle}>{contactUsText}</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
        </Navbar>
     )
 }

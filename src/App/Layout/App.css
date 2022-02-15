@@ -1,6 +1,3 @@
-/*Keep progressive web app from react, requires App.css for create-react-app. 
-"By default, create-react-app will create a progressive web app, as documented here.
-The progressive web app relies on registerServiceWorker() in the registerServiceWorker.js file."
-https://github.com/facebook/create-react-app/blob/main/packages/cra-template/template/README.md
+/*
 https://stackoverflow.com/questions/47933951/unable-to-compile-react-application-as-it-says-module-not-found?rq=1
 */
