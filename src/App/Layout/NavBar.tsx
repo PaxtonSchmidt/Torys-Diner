@@ -19,9 +19,8 @@ const linkStyle = {
 }
 
 const barStyle = {
-    backgroundColor: '#292926',
+    background: 'linear-gradient(110deg, #722b44 30%, #fd7343 60%)',
     minWidth: '100%',
-    jusifyContent: 'end'
 }
 
 const mugClubText = 'Mug\u00A0Club'  //unicode is RAD!!! learn more
@@ -29,9 +28,10 @@ const contactUsText = 'Contact\u00A0Us'
 
 export default function NavBar() {
     return (     
-        <Navbar expand='md' style={barStyle} variant='dark'>
+        <Navbar expand='md' style={barStyle} variant='light'>
             <Navbar.Brand>
                     <img src={logo} alt="Torys Diner Logo" style={logoStyle}/>
+                    at Isla Verde
             </Navbar.Brand> 
             <Navbar.Toggle style={{justifyContent: 'end', marginRight: '20px'}}/>
             <Navbar.Collapse >

@@ -1,3 +1,7 @@
 /*
 https://stackoverflow.com/questions/47933951/unable-to-compile-react-application-as-it-says-module-not-found?rq=1
 */
+
+.about {
+    background-color: grey;
+}
