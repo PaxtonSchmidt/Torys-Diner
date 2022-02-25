@@ -1,16 +1,26 @@
 import React from 'react';
 import './App.css';
-import About from './About';
-import NavBar from './NavBar';
+import NavBar from './Nav/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from './welcomeCarousel';
+import Carousel from './Banner/WelcomeCarousel';
+import LogoBanner from './Nav/Logo';
+import BannerContent from './Banner/BannerContent';
+import Array from './CardArray/Array'
+import Logo from './Nav/Logo';
+
+
 
 function App() {
   return (
-      <>
-        <NavBar />
-        <Carousel />
-      </>
+      <div className='appStyle'>
+        <NavBar />  
+      
+        
+        <BannerContent />  
+        <div className='spacer wave'></div>      
+        <Array />
+        <div className='spacerLight waveLight'></div>
+      </div >
   );
 }
 

@@ -2,6 +2,139 @@
 https://stackoverflow.com/questions/47933951/unable-to-compile-react-application-as-it-says-module-not-found?rq=1
 */
 
-.about {
-    background-color: whitesmoke;
+/* waveLight background-color: #f2f0ff; */
+
+
+
+.appStyle {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
+
+.arrayStyles {
+  width: 100vw;
+}
+
+.arrayText {
+  text-align: center;
+}
+
+.banner {
+  position: relative;
+  width: 100vw; 
+  height: 50vh;
+  margin: 0;
+}
+
+.bannerText {
+  text-align: center;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.barContainer {
+  justify-content: center;
+  display: flex;
+  height: 6vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+}
+
+.logoStyles {
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  padding-top: 10px;
+}
+
+.navButton {
+  z-index: 2;
+}
+
+.spacer {
+  aspect-ratio: 1800/100;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} 
+
+.spacerLight {
+  aspect-ratio: 1800/100;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} 
+
+.wave {
+  background-image: url('../Img/About/wave.svg');
+}
+
+.waveLight {
+  background-image: url('../Img/About/waveLight.svg');
+}
+
+.welcomeCarousel {
+  max-width: 600px;
+  margin-right: 2vw;
+  padding-top: 40px;
+}
+
+/*required so the images in the carousel align with the carousel component itself*/
+.welcomeCarouselImg { 
+  padding-left: 0px;
+}
+
+
+
+
+
+/*--Media Queries-------------------------------------------------------------------------------*/
+
+/*bootstrap large breakpoint*/
+@media (max-width: 1200px) {
+  .fadesAtLargeViewport {
+    display: none;
+  }
+
+}
+
+
+
+/*bootstrap medium breakpoint*/
+@media (max-width: 992px) {
+  .bannerText {
+    text-align: center;
+    padding-top: 1vh;
+  }
+  .fadesAtMedViewport {
+    display: none;
+  }
+
+}
+
+
+
+/*bootstrap small breakpoint*/
+@media (max-width: 768px) {
+  .bannerText {
+    text-align: center;
+    padding-top: 15px;
+  }
+  .bannerH1 {
+    width: 90%;
+    margin-left: 1%;
+  }
+ 
+}
+
+/*preemptive query for xxs phones, galaxy fold and others */
+@media (max-width: 365px) { 
+    .navButton {
+      display: none;
+    }
+  }
