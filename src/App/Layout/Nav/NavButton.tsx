@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Dropdown} from 'react-bootstrap';
-import cup from '../../Img/Icons/cup-fill.svg';
+import cup from '../../Img/Icons/cup.svg';
 
 const linkStyle = {
     color: '#1a1a1a',
@@ -23,7 +23,7 @@ export default function NavButton() {
             <Dropdown style={{marginTop: '15px', position: 'absolute', paddingLeft: '1vw'}} className='navButton'>
                 <Dropdown.Toggle 
                     style={buttonStyle} //style
-                    className='btn btn-primary shadow-none, shadow-lg rounded'> 
+                    className='btn btn-primary shadow-none, shadow-sm rounded'> 
                     <img src={cup} style={{height: '25px', paddingLeft: '5px'}}/>
                 </Dropdown.Toggle>  
 
