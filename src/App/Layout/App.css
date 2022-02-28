@@ -15,6 +15,7 @@ https://stackoverflow.com/questions/47933951/unable-to-compile-react-application
 
 .arrayStyles {
   width: 100vw;
+  padding-top: 80px;
 }
 
 .arrayText {
@@ -50,9 +51,10 @@ https://stackoverflow.com/questions/47933951/unable-to-compile-react-application
 }
 
 .card {
-  text-align: center;
   margin-top: 20px;
   height: 120px;
+  width: 100%;
+  text-align: center;
 }
 
 .logoStyles {
@@ -63,9 +65,10 @@ https://stackoverflow.com/questions/47933951/unable-to-compile-react-application
 }
 
 .menuStyles {
-  background-color: #f2f0ff;
-  height: 600px;
-  margin-top: 200px;
+  background-color: #00183d;
+  height: 825px;
+  margin-top: 300px;
+  margin-bottom: 300px;
 }
 
 .navButton {
@@ -115,7 +118,7 @@ https://stackoverflow.com/questions/47933951/unable-to-compile-react-application
 
 /*bootstrap extra-large breakpoint*/
 @media (max-width: 1200px) {
-  .fadesAtLargeViewport {
+  .fadesAtXLViewport {
     display: none;
   }
 
@@ -129,13 +132,9 @@ https://stackoverflow.com/questions/47933951/unable-to-compile-react-application
     text-align: center;
     padding-top: 1vh;
   }
-  .fadesAtMedViewport {
+  .fadesAtLGViewport {
     display: none;
   }
-  .card {
-    height: 120px;
-  }
-
 }
 
 
@@ -157,14 +156,15 @@ https://stackoverflow.com/questions/47933951/unable-to-compile-react-application
 }
 
 /*bootstrap extra-small breakpoint*/
-@media (max-width: 576) {
-  
+@media (max-width: 576px) {
+  .card {
+    height: 100px;
+  }
 }
 
-/*researched thinnest breakpoint to design for*/
-@media (max-width: 320) {
- 
-}
+/*researched thinnest breakpoint to design for
+@media (max-width: 320) {}
+*/
 
 /*preemptive query for xxs phones, galaxy fold and others */
 @media (max-width: 365px) { 
