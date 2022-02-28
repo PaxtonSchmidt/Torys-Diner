@@ -8,6 +8,7 @@ import BannerContent from './Banner/BannerContent';
 import Array from './CardArray/Array'
 import Logo from './Nav/Logo';
 import Menu from './Menu/Menu';
+import MenuContainer from './Menu/MenuContainer';
 
 
 
@@ -20,7 +21,7 @@ function App() {
         <div className='spacer wave'></div>      
         <Array />
         <div className='spacerLight waveLight'></div>
-        <Menu />
+        <MenuContainer />
       </div >
   );
 }

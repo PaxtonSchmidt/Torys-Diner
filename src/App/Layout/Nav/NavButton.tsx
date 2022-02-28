@@ -9,8 +9,6 @@ const linkStyle = {
 }
 
 let buttonStyle = {
-    backgroundColor: 'white', 
-    borderColor: 'white', 
     color: '#1a1a1a'
 }
 
@@ -22,8 +20,9 @@ export default function NavButton() {
         <div>
             <Dropdown style={{marginTop: '15px', position: 'absolute', paddingLeft: '1vw'}} className='navButton'>
                 <Dropdown.Toggle 
+                    variant='outline-light'
                     style={buttonStyle} //style
-                    className='btn btn-primary shadow-none, shadow-sm rounded'> 
+                    className='shadow-sm rounded'> 
                     <img src={cup} style={{height: '25px', paddingLeft: '5px'}}/>
                 </Dropdown.Toggle>  
 
