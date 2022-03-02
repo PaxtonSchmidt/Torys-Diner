@@ -9,6 +9,8 @@ import Array from './CardArray/Array'
 import Logo from './Nav/Logo';
 import Menu from './Menu/Menu';
 import MenuContainer from './Menu/MenuContainer';
+import Footer from './Footer/Footer';
+import Location from './Location/Location';
 
 
 
@@ -22,6 +24,8 @@ function App() {
         <Array />
         <div className='spacerLight waveLight'></div>
         <MenuContainer />
+        <Location />
+        <Footer />
       </div >
   );
 }

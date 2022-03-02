@@ -9,10 +9,10 @@ export default function welcomeCarousel() {
     return (
                 <Carousel className='carousel-fade welcomeCarousel' >
                     <Carousel.Item >
-                        <img src={banner} className='d-block w-100 rounded-circle welcomeCarouselImg' />
+                        <img src={lobby} className='d-block w-100 rounded-circle welcomeCarouselImg' />
                     </Carousel.Item>
                     <Carousel.Item >
-                        <img src={lobby} className='d-block w-100 rounded-circle welcomeCarouselImg' />
+                        <img src={banner} className='d-block w-100 rounded-circle welcomeCarouselImg' />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img src={closeUp} className='d-block w-100 rounded-circle welcomeCarouselImg' />

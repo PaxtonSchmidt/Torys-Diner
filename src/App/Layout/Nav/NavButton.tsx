@@ -27,8 +27,8 @@ export default function NavButton() {
                 </Dropdown.Toggle>  
 
                 <Dropdown.Menu style={{backgroundColor: 'white', borderColor: 'white', padding: '0'}} className='shadow-sm rounded' >
-                    <Dropdown.Item href='#About' style={linkStyle}>About</Dropdown.Item>
                     <Dropdown.Item href='#Menu' style={linkStyle}>Menu</Dropdown.Item>
+                    <Dropdown.Item href='#HoursAndLocation' style={linkStyle}>Hours and Location</Dropdown.Item>
                     <Dropdown.Item href='#Reservations' style={linkStyle}>Reservations</Dropdown.Item>
                     <Dropdown.Item href='#MugClub' style={linkStyle}>Mug Club</Dropdown.Item>
                     <Dropdown.Item href='#Contact' style={linkStyle}>Contact Us</Dropdown.Item>

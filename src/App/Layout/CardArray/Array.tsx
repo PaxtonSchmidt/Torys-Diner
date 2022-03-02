@@ -25,19 +25,20 @@ export default function Array() {
                     <Col xs={9} sm={6} md={4} lg={3} xl={2} >
                         <Card className='card shadow-sm border-0' >
                             <Card.Body>
-                                <Card.Title>Mug Club</Card.Title>
-                                <Card.Text>Free refills for regular customers</Card.Text>
+                                <Card.Title>Find Us</Card.Title>
+                                <Card.Text>Tucked away in the beauty of Hotel Isla Verde</Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
                     <Col xs={9} sm={6} md={4} lg={3} xl={2} >
                         <Card className='card shadow-sm border-0' >
                             <Card.Body>
-                                <Card.Title>Find Us</Card.Title>
-                                <Card.Text>Tucked away in the beauty of Hotel Isla Verde</Card.Text>
+                                <Card.Title>Mug Club</Card.Title>
+                                <Card.Text>Free refills for regular customers</Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
+                    
                     <Col xs={9} sm={6} md={4} lg={3} xl={2} >
                         <Card className='card shadow-sm border-0' >
                             <Card.Body>
