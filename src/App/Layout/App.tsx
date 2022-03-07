@@ -2,15 +2,15 @@ import React from 'react';
 import './App.css';
 import NavBar from './Nav/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from './Banner/WelcomeCarousel';
-import LogoBanner from './Nav/Logo';
 import BannerContent from './Banner/BannerContent';
 import Array from './CardArray/Array'
-import Logo from './Nav/Logo';
-import Menu from './Menu/Menu';
 import MenuContainer from './Menu/MenuContainer';
 import Footer from './Footer/Footer';
 import Location from './Location/Location';
+import MACContainer from './MugAndContact/MugClubAndContact';
+import { Container } from 'react-bootstrap';
+import WaveSpacer1 from './WaveSpacers/WaveSpacer1';
+import WaveSpacer2 from './WaveSpacers/WaveSpacer2';
 
 
 
@@ -20,14 +20,24 @@ function App() {
       <div className='appStyle'>
         <NavBar /> 
         <BannerContent />  
-        <div className='spacer wave'></div>      
+        <WaveSpacer1 />
         <Array />
-        <div className='spacerLight waveLight'></div>
+        <WaveSpacer2 />
         <MenuContainer />
-        <Location />
+        
+        <Container>
+          <div className='checkerBG shadow-lg'>
+            <MACContainer />
+            <Location />  
+          </div>
+        </Container>
+      
         <Footer />
       </div >
   );
 }
 
 export default App;
+
+
+ {/* <Specials /> */}

@@ -5,18 +5,19 @@ import Map from './Map';
 
 export default function Location() {
     return (
-  
-  <Container id='HoursAndLocation' fluid style={{width: '100vw', marginBottom: '150px', paddingBottom: '50px', backgroundColor: '#00183d', paddingTop: '50px'}}>
-            <Row style={{justifyContent: 'center'}}>
-                <Col md={3} lg={3} xl={3}>
-                    <h1 style={{color: 'white'}}>Open</h1>
-                    <h5 style={{color: 'white'}}>8am to 2pm on Wednesday, Thursday and Friday</h5>
-                    <h5 style={{color: 'white'}}>8am to Noon on Saturday and Sunday</h5>
-                </Col>
-                <Col md={9} lg={8} xl={4} >
+            <Row style={{border: '10px solid red', borderRadius: '20px', backgroundColor: '#ffffff', margin: '2vw', height: '600px'}}>
+                <Col xs={6} style={{justifyContent: 'right', width: '50%', padding: '0px'}}>
                     <Map />
                 </Col>
+                <Col xs={6} style={{padding:'0px'}}>                            
+                    <Container style={{fontWeight: 'bold', textAlign: 'center'}}>
+                        <h1 style={{color: '#ef8a17'}}>Hours</h1>
+                        <p style={{color: '#034732', marginBottom: '0px'}}>Closed Monday and Tuesday</p>
+                        <p style={{color: '#034732', marginBottom: '0px'}}>8am to 2pm Wednesday to Friday</p>
+                        <p style={{color: '#034732'}}>8am to Noon Saturday and Sunday</p>
+                    </Container>
+                </Col>
+                
             </Row>
-        </Container>
     )
 }
