@@ -5,11 +5,11 @@ import detail from '../../Img/Menu/TDdetail.svg';
 
 export default function MenuContainer() {
     return(
-        <Container id='Menu' className='menuStyles shadow-lg' style={{padding: '30px', borderRadius: '20px'}}>
-            <Container style={{padding: '20px 0px', border: '4px solid white', margin: '0'}}>
+        <Container id='Menu' fluid className='allComponentsWrapper' >
+            <div style={{margin: '0', width: '100%', borderRadius: '20px'}}>
                 <img src={detail} style={{width: '100%'}}/>  
-               <Menu />
-            </Container>
+                <Menu />
+            </div>
         </Container>
     )
 }

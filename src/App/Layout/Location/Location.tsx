@@ -5,7 +5,8 @@ import Map from './Map';
 
 export default function Location() {
     return (
-            <Row style={{border: '10px solid red', borderRadius: '20px', backgroundColor: '#ffffff', margin: '2vw', height: '600px'}}>
+        
+            <Row id='Location' style={{border: '5px solid red', borderRadius: '20px', backgroundColor: '#ffffff', margin: '2vw', height: '600px'}}>
                 <Col xs={6} style={{justifyContent: 'right', width: '50%', padding: '0px'}}>
                     <Map />
                 </Col>

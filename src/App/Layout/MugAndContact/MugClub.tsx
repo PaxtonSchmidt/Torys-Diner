@@ -1,11 +1,11 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Form from './MugClubAndContact';
+import Form from './MugClub';
 import lobby from '../../Img/About/lobby.png';
 
-export default function MACContainer() {
+export default function MugClubContainer() {
     return(
-            <Row className='macStyles' style={{height: '500px', border: '10px solid red', borderRadius: '20px', backgroundColor: '#e4cd70', margin: '2vw'}}>
+            <Row id='MugClub' className='mugClubStyles' style={{height: '500px', border: '5px solid red', borderRadius: '20px', backgroundColor: '#e4cd70', margin: '2vw'}}>
                 <Col style={{width: '50%', padding: '0px'}}>                            
                     <Container style={{fontWeight: 'bold', textAlign: 'center'}}>
                         <h1 style={{color: '#d16666'}}>Mug Club</h1>

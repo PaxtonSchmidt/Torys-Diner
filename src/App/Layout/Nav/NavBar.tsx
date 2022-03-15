@@ -1,63 +1,36 @@
 import React from "react";
-import { Card, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
-import NavButton from "./NavButton";
+import { Button, ButtonGroup, Col, Container,Row } from "react-bootstrap";
+import MainHeader from "./MainHeader";
+
+
+//dont use bootstrap you dummy
+//float header h1 right and ul of links position right
 
 
 export default function NavBar() {
     return (     
-    <Container fluid className='allComponentsWrapper'>
-        <div >
-            <Nav style={{justifyContent: 'center', width: '100%', height: '100%', alignContent: 'bottom'}}>
-                <div>
-                    <h1 className='mainHeader'>
-                        <span>T</span>
-                        <span>O</span>
-                        <span>R</span>
-                        <span>Y</span>
-                        <span>'</span>
-                        <span>S</span>
-
-                        <span style={{marginLeft: '40px'}}>D</span>
-                        <span>I</span>
-                        <span>N</span>
-                        <span>E</span>
-                        <span>R</span>
-                    </h1>
-                </div>
-            </Nav>
-        </div>
-        <div className='navChecker checkerBG shadow-sm'>
-        </div>
+    <Container fluid className='allComponentsWrapper' style={{position:'relative'}}>
+       
+        <Row className='navRow'> 
+            <MainHeader />
+            <div style={{width: '100%', justifyContent: 'right'}}>
+                <ButtonGroup style={{height: '50px', paddingTop: '40px', marginRight: '3vw', float: 'right'}}>
+                    <Button href='#Menu' className='shadow-none' style={{width: 'fit-content', padding: '0px', backgroundColor: 'transparent', border: 'none', textAlign: 'right'}}>
+                        <p className='navButton'>Menu</p>
+                    </Button>
+                    <Button href='#MugClub' className='shadow-none' style={{width: 'fit-content', padding: '0px', backgroundColor: 'transparent', border: 'none', textAlign: 'right'}}>
+                        <p className='navButton'>Mug Club</p>
+                    </Button>
+                    <Button href='#Location' className='shadow-none' style={{width: 'fit-content', padding: '0px', backgroundColor: 'transparent', border: 'none', textAlign: 'right'}}>
+                        <p className='navButton'>Location</p>
+                    </Button>
+                    <Button href='#Contact' className='shadow-none' style={{width: 'fit-content', padding: '0px', backgroundColor: 'transparent', border: 'none', textAlign: 'right'}}>
+                        <p className='navButton'>Contact</p>  
+                    </Button>
+                </ButtonGroup>
+            </div>
+        </Row>
     </Container>
     )
 }
 
-
-// <div className='navText' style={{padding: '20px', marginLeft: '150px'}}>
-// <a>Reach Out</a>
-// </div>
-
-// <div className='navText' style={{padding: '20px'}}>
-// <a>Location and Hours</a>
-// </div>
-
-
-// <div className='navText' style={{padding: '20px'}}>
-//                     <a>Menu</a>
-//                 </div>
-
-//                 <div className='navText' style={{padding: '20px', marginRight: '150px'}}>
-//                     <a>Mug Club</a>
-//                 </div>
-
-
-
-
-
-
-
-
-    // <Col><Card style={{border: 'none', height: '20px', backgroundColor: '#dddddd'}}><Card.Title>test</Card.Title></Card></Col>
-    //             <Col><Card style={{border: 'none', height: '20px', backgroundColor: '#dddddd'}}><Card.Title>test</Card.Title></Card></Col>
-    //             <Col><Card style={{border: 'none', height: '20px', backgroundColor: '#dddddd'}}><Card.Title>test</Card.Title></Card></Col>
-    //             <Col><Card style={{border: 'none', height: '20px', backgroundColor: '#dddddd'}}><Card.Title>test</Card.Title></Card></Col>

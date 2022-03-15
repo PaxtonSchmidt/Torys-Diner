@@ -4,12 +4,12 @@ import detail from '../../Img/Menu/TDdetail.svg';
 
 export default function Menu() {
     return(
-        <Container>
+        <Container style={{width: 'fit-content'}}>
             <Row style={{textAlign: 'center', justifyContent: 'center', position: 'relative'}}>
                 <Col xs={12} md={7} lg={4}>
-                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#00183d'}}>
+                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#474747'}}>
                         <Card.Body>
-                            <Card.Title style={{marginBottom: '0', color: '#DD7373'}}>
+                            <Card.Title style={{marginBottom: '0', color: '#f72585'}}>
                                 Omelet
                             </Card.Title>
                             <Card.Text >
@@ -19,9 +19,9 @@ export default function Menu() {
                     </Card>
                 </Col>
                 <Col xs={12} md={7} lg={4}>
-                    <Card style={{color: 'white', width: '100%', marginBottom: '30px',  border: 'none', backgroundColor: '#00183d'}}>
+                    <Card style={{color: 'white', width: '100%', marginBottom: '30px',  border: 'none', backgroundColor: '#474747'}}>
                         <Card.Body>
-                            <Card.Title style={{marginBottom: '0', color: '#DD7373'}}>
+                            <Card.Title style={{marginBottom: '0', color: '#f72585'}}>
                                 Fried or Scrambled
                             </Card.Title>
                             <Card.Text>
@@ -31,9 +31,9 @@ export default function Menu() {
                     </Card>
                 </Col>
                 <Col  xs={12} md={7} lg={4}>
-                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#00183d'}}>
+                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#474747'}}>
                         <Card.Body>
-                            <Card.Title style={{marginBottom: '0', color: '#DD7373'}}>
+                            <Card.Title style={{marginBottom: '0', color: '#f72585'}}>
                                 French Toast
                             </Card.Title>
                             <Card.Text>
@@ -49,9 +49,9 @@ export default function Menu() {
 
             <Row style={{textAlign: 'center', justifyContent: 'center'}}>
                 <Col xs={12} md={7} lg={4}>
-                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#00183d'}}>
+                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#474747'}}>
                         <Card.Body>
-                            <Card.Title style={{marginBottom: '0', color: '#DD7373'}}>
+                            <Card.Title style={{marginBottom: '0', color: '#f72585'}}>
                                 Chorizo
                             </Card.Title>
                             <Card.Text>
@@ -61,9 +61,9 @@ export default function Menu() {
                     </Card> 
                 </Col>
                 <Col xs={12} md={7} lg={4}>
-                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#00183d'}}>
+                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#474747'}}>
                         <Card.Body>
-                            <Card.Title style={{marginBottom: '0', color: '#DD7373'}}>
+                            <Card.Title style={{marginBottom: '0', color: '#f72585'}}>
                                 English Muffin
                             </Card.Title>
                             <Card.Text>
@@ -78,9 +78,9 @@ export default function Menu() {
 
             <Row style={{textAlign: 'center', justifyContent: 'center'}}>
                 <Col xs={12} md={7} lg={4} >
-                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#00183d'}}>
+                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#474747'}}>
                         <Card.Body>
-                            <Card.Title style={{marginBottom: '0', color: '#DD7373'}}>
+                            <Card.Title style={{marginBottom: '0', color: '#f72585'}}>
                                 Meatloaf
                             </Card.Title>
                             <Card.Text>
@@ -90,9 +90,9 @@ export default function Menu() {
                     </Card>
                 </Col>
                 <Col xs={12} md={7} lg={4}>
-                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#00183d'}}>
+                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#474747'}}>
                         <Card.Body>
-                            <Card.Title style={{marginBottom: '0', color: '#DD7373'}}>
+                            <Card.Title style={{marginBottom: '0', color: '#f72585'}}>
                                 Chicken Noodle Soup
                             </Card.Title>
                             <Card.Text>
@@ -102,9 +102,9 @@ export default function Menu() {
                     </Card>
                 </Col>
                 <Col xs={12} md={7} lg={4}>
-                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#00183d'}}>
+                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#474747'}}>
                         <Card.Body>
-                            <Card.Title style={{marginBottom: '0', color: '#DD7373'}}>
+                            <Card.Title style={{marginBottom: '0', color: '#f72585'}}>
                                 Turkey Manhattan
                             </Card.Title>
                             <Card.Text>
@@ -119,9 +119,9 @@ export default function Menu() {
 
             <Row style={{textAlign: 'center', justifyContent: 'center'}}>
                 <Col xs={12} md={7} lg={4}>
-                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#00183d'}}>
+                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#474747'}}>
                         <Card.Body>
-                            <Card.Title style={{marginBottom: '0', color: '#DD7373'}}>
+                            <Card.Title style={{marginBottom: '0', color: '#f72585'}}>
                                 Grilled Cheese
                             </Card.Title>
                             <Card.Text>
@@ -131,9 +131,9 @@ export default function Menu() {
                     </Card>
                 </Col>
                 <Col xs={12} md={7} lg={4}>
-                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#00183d'}}>
+                    <Card style={{color: 'white', width: '100%', marginBottom: '30px', border: 'none', backgroundColor: '#474747'}}>
                         <Card.Body>
-                            <Card.Title style={{marginBottom: '0', color: '#DD7373'}}>
+                            <Card.Title style={{marginBottom: '0', color: '#f72585'}}>
                                 Homemade Classic Chili
                             </Card.Title>
                             <Card.Text>
