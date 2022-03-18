@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import getViewportWidth from '../../Script/GetViewportWidth';
-import WelcomeCarouselLg from './WelcomeCarouselDesktop';
-import WelcomeCarouselSm from './WelcomeCarouselMobile';
+import NavBarDesktop from './NavBarDesktop';
+import NavBarMobile from './NavBarDropdown.tsx/NavBarMobile';
 
-export default function CarouselContainer() {
+export default function NavBarContainer() {
     let viewportWidth: number = getViewportWidth();
     const [width, setWidth] = useState(viewportWidth);
     let size: string = '';
-        if (viewportWidth <= 768) {
+        if (viewportWidth <= 992) {
             size = 'smallViewport';
         } else {
             size = 'bigViewport';
@@ -18,7 +18,7 @@ export default function CarouselContainer() {
         
         function listener() {
             clearTimeout(timeout);
-            timeout = setTimeout(() => setWidth(getViewportWidth()), 50); //responsiveness is inversely related to performance, the higher this number is, the more the function
+            timeout = setTimeout(() => setWidth(getViewportWidth()), 64); //responsiveness is inversely related to performance, the higher this number is, the more the function
         };
         window.addEventListener('resize', listener);
 
@@ -27,5 +27,6 @@ export default function CarouselContainer() {
         })
     }, [])
     
-    return (size === 'smallViewport') ? <WelcomeCarouselSm /> : <WelcomeCarouselLg />;    
+    return (size === 'smallViewport') ? <NavBarMobile /> : <NavBarDesktop />; 
 }
+

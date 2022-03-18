@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import getViewportSize from '../../Script/GetViewportWidth';
-import PhotoTileArraySm from './PhotoTileArraySm';
-import PhotoTileArrayLg from './PhotoTileArrayLg';
-import { type } from 'os';
+import PhotoTileArraySm from './PhotoTileArrayMobile';
+import PhotoTileArrayLg from './PhotoTileArrayDesktop';
 import getViewportWidth from '../../Script/GetViewportWidth';
 
 export default function PhotoTileArray() {
     let viewportWidth: number = getViewportWidth();
     const [width, setWidth] = useState(viewportWidth);
     let size: string = '';
-        if (viewportWidth <= 768) {
+        if (viewportWidth <= 992) {
             size = 'smallViewport';
         } else {
             size = 'bigViewport';

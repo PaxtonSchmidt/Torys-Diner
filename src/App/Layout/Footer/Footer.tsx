@@ -7,9 +7,12 @@ import whatsapp from '../../Img/Icons/whatsapp.svg';
 export default function Footer() {
     return(
         <div className='footer'>
-            <img src={facebook} className='footerIcon' />
-            <img src={geo}  className='footerIcon'/>
-            <img src={whatsapp}  className='footerIcon'/>
+            <div className='footerIconBackground'>
+                <img src={facebook} className='footerIcon' />
+            </div>
+            <div className='footerIconBackground'>
+                <img src={whatsapp}  className='footerIcon'/>
+            </div>
         </div>
     )
 }

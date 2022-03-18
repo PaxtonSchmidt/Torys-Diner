@@ -8,7 +8,7 @@ import closeUp from '../../Img/About/food close up.png';
 
 
 
-export default function welcomeCarouselSm() {
+export default function welcomeCarouselMobile() {
     return (
         <Carousel  className='welcomeCarousel'>
             <Carousel.Item>

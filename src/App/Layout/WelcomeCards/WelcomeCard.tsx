@@ -8,9 +8,9 @@ export default function WelcomeCard(props: WelcomeCardProps) {
             <div style={{height: '40%', marginTop: '15%'}}>
                 <Image className='welcomeCardImg' src={props.src} />
             </div>
-            <div style={{height: '60%', marginTop: '15%'}}>
+            <div style={{height: '60%', marginTop: '15%', textAlign: 'center'}}>
                 <h1>{props.header}</h1>
-                <p>{props.subHeader}</p>
+                <p style={{color:'#429aae', fontWeight: 'bolder'}}>{props.subHeader}</p>
                 <a  href={props.destinaton} />
             </div>
         </div>

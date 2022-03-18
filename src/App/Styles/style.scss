@@ -1,16 +1,39 @@
-/*  #f72585 hot pink
-*/
-$blueNeonGlow:  0 0 1px grey,
-                0 0 20px #00fdfd,
-                0 0 40px #00fdfd;
+/* 
+orange
+ff7f11
 
-$pinkNeonGlow:  0 0 1px grey,
-                0 0 20px #f72585,
-                0 0 40px #f72585;
+red
+ff1b1c 
+
+blue
+429aae
+
+light yellow
+f5ee9e
+
+off-white
+fdffff 
+
+dark-blue contrast
+042a2b
+*/
+
+
+
+$orangeGlow:  0 0 20px #ff7f11,
+              0 0 10px #ff7f11;
+
+$headerShadow: 2px 2px #042a2b,
+               0 0 1px #042a2b;
 
     
   a{
     text-decoration: none !important;
+  }
+
+  h1 {
+    text-decoration: outline 2px #042a2b;
+    font-weight: bolder;
   }
 
   .appStyle {
@@ -18,31 +41,27 @@ $pinkNeonGlow:  0 0 1px grey,
     height: 100vh;
     overflow-x: hidden;
     position: relative;
-    background-color: #474747;
+    background-color: #fdffff;
     font-family: 'Fredoka', Geneva, Tahoma, sans-serif;
     -webkit-font-smoothing: antialiased;
     justify-content: center;
-  }
-  
-  .arrayStyles {
-    width: 100vw;
-    padding-top: 0px;
+    transition: .2s;
   }
   
   .arrayText {
     text-align: center;
-    
   }
 
   .allComponentsWrapper {
     max-width: 1700px;
     height: fit-content;
     position: relative;
+    margin: 0%;
   }
 
   .bannerText {
-    font-weight: bold;
-    color: #72a1e5;
+    font-weight: bolder;
+    color: #429aae;
     margin-left: auto; 
     margin-right: auto;
     padding: 0;
@@ -54,14 +73,10 @@ $pinkNeonGlow:  0 0 1px grey,
     border-radius: 20px 20px 20px 20px;
     overflow: hidden;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
-    height: fit-content;
+    max-height: 80vh;
+    top: 100px;
   }
-  
-  .bannerH1{
-    text-shadow: 2px 2px #474747;
-  }
+
   
   .card {
     margin-top: 20px;
@@ -72,7 +87,7 @@ $pinkNeonGlow:  0 0 1px grey,
 
   .carouselImgDiv {
     width: 1600;
-    max-height: 600px;
+    max-height: 800px;
     
     object-fit: cover !important;
     object-position: bottom !important;
@@ -95,42 +110,62 @@ $pinkNeonGlow:  0 0 1px grey,
   }
   
   .footer {
-    justify-content: left;
-    margin-left: 1vw;
-    margin-bottom: 1vw;
+    bottom: 0;
+    position: fixed;
   }
   
   .footerIcon {
-    height: 10vw;
-    max-height: 50px;
-    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .footerIconBackground {
+    background-color: #f5ee9e;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    margin: 0px 0px 5px 5px;
+    padding: 2px 5px 4px 5px;
+    cursor: pointer;
+    display: inline-block;
   }
   
   
    .header {
     height: fit-content;
     font-weight: bolder;
-    color: #00fdfd;
     letter-spacing: 2px;
     cursor: pointer;
+    color: #ff7f11;
+    transition-property: opacity 10s;
+    opacity: 0%;
+    animation: illuminate 2s cubic-bezier(0,-3.06, 0, 0.88) forwards;
   }
 
-  .hoursStyles{
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .mainHeader {
+  .mainHeaderDesktop {
     position: absolute;
     text-align: left;
     margin-left: 2vw;
     font-size: 60px;
     padding-top: 10px;
+    transition: .5s;
   }
 
-  .mugClubStyles{
-    height: fit-content;
+  .mainHeaderMobile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 50px;
+    transition: .5s;
+  }
+
+  .mugClubPic{
+    background-image: url('../Img/About/mug.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    display: block;
   }
 
   .menuStyles {
@@ -141,42 +176,64 @@ $pinkNeonGlow:  0 0 1px grey,
     width: 100%;
     margin: 0%;
   }
-  
-  .mugClubImg {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
+
+  .mobileNavbarButton {
+    position: fixed;
+    height: 35px;
+    top: 20px;
+    right: 8vw;
+    z-index: 1000;
+    background-color: #fdffff;
+    border-radius: 10px;
+    border: 1px #429aae;
+  }
+
+  .mobileDropdownButtonGroup {
+    text-align: center;
+    align-content: center;
+    height: 100px;
+    padding: 0px;
   }
 
   .navButton {
     cursor: pointer;
-    color: #00fdfd;
+    color: #429aae;
     margin-left: 5vw;
     font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Fredoka', Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
 }
 
-  .photo {
-    height: 100%;
-    width: 100%;
+  .photoTileContainer {
+    margin-top: 40px;
+  }
+
+  .photoTile {
+    border-radius: 10px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: transform .1s;
+    transform: translateY(2px)
   }
 
   .photoTileLg {
-    width: 20%;
-    aspect-ratio: 1;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    margin: 10px 10px 10px 10px;
+    width: 25%;
+    margin: 7px 7px 7px 7px;
   }
-  
+
+  .photoTileBBread {background-image: url('../Img/About/tile\ Bbread.png');}     .photoTileOmelet{background-image: url('../Img//About/tile\ breakfastOmelet.png');}
+  .photoTileFront{background-image: url('../Img//About/tile\ front\ door.png');} .photoTileBrocSoup{background-image: url('../Img//About/tile\ brocsoup.png');}
+  .photoTileLobby{background-image: url('../Img//About/tile\ lobby.png');}       .photoTileBanner{background-image: url('../Img//About/tile\ banner.png');}
+  .photoTileChili{background-image: url('../Img//About/tile\ chili.png');}       .photoTile1year{background-image: url('../Img//About/1\ year.png');}
+
   .photoTileSm {
     width: 50%;
-    aspect-ratio: 1;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
     margin: 5px;
   }
 
@@ -204,17 +261,42 @@ $pinkNeonGlow:  0 0 1px grey,
     position: absolute;
   }
 
+  .subBanner {
+    width: 100%;
+    height: 600px;
+    background-color: #3898ad;
+    border: 8px solid #042a2b;
+    border-radius: 20px;
+    margin-top: 40px;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+
+  .subBannerHalf1 {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    background-color: #429aae;
+  }
+  .subBannerHalf2 {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    background-color: #f5ee9e;
+    position: relative;
+  }
   
   .tileText {
     position: absolute;
     text-align: center;
-    color: #f72585;
+    color: #ff7f11;
     text-shadow: 2px 2px #474747;
   }
 
   .welcomeCard {
-    background-color: #72a1e5;
-    border: 5px solid #1b1b1e;
+    background-color: #fdffff;
+    border: 8px solid #042a2b;
+    color: #ff7f11;
     margin-bottom: 20px;
     border-radius: 20px;
     height:500px;
@@ -237,6 +319,7 @@ $pinkNeonGlow:  0 0 1px grey,
   .welcomeCarousel {
     width: 100%;
     position: relative;
+    max-height: 80vh;
   }
 
   /*required so the images in the carousel align with the carousel component itself*/
@@ -248,32 +331,24 @@ $pinkNeonGlow:  0 0 1px grey,
   /*--Effects------------------------------------------------------------------------------------*/
 
  
-
-  .sectionHeader {
-    text-shadow: $blueNeonGlow;
+ 
+  .photoTile:hover {
+    transition: .2s linear;
+    transform: translateY(-1px) scale(1.03);
   }
-
 
  .navButton:hover {
      transition: .2s;
-     text-shadow: $pinkNeonGlow;
-     color: #f72585
+     text-shadow: $orangeGlow;
+     color: #ff7f11;
  }
 
-  .header {
-    transition-property: opacity .3s;
-    opacity: 0%;
-    animation: illuminate 2s cubic-bezier(0,-3.06, 0, 0.88) forwards;
-  }
-
   .headerBlue {
-      color: #00fdfd;
-      text-shadow: $blueNeonGlow;
+      color: #ff7f11;
   }
 
   .headerPink {
-    color: #f72585;
-    text-shadow: $pinkNeonGlow;
+    color: #ff7f11;
   }
 
   @keyframes illuminate {
@@ -286,7 +361,8 @@ $pinkNeonGlow:  0 0 1px grey,
     
   }
   .header span:hover:nth-child(1) {
-    color: white;
+    text-shadow: $orangeGlow;
+    color: #f2f3ae;
   }
   /*-----------*/
   
@@ -404,8 +480,8 @@ $pinkNeonGlow:  0 0 1px grey,
       text-align: center;
       padding-top: 1vh;
     }
-    .fadesAtLGViewport {
-      display: none;
+    .bannerContainer {
+      margin: 0;
     }
   }
   
@@ -420,7 +496,9 @@ $pinkNeonGlow:  0 0 1px grey,
       margin-left: 10px;
       margin-right: 10px;
     }
-    
+    .welcomeCard {
+      max-width: 450px;
+    }
   }
   
   /*bootstrap extra-small breakpoint*/
@@ -428,12 +506,44 @@ $pinkNeonGlow:  0 0 1px grey,
     .card {
       height: 100px;
     }
+    .navButton{
+      width: fit-content;
+      padding: 0;
+      font-size: 15px;
+      margin: 0px 2px 0px 2px ;
+    }
+    .welcomeCard {
+       max-height: 400px;
+    }
   }
   
   /*researched thinnest breakpoint to design for
   @media (max-width: 320) {}
   */  
   
+  
+  @media (max-width: 510px) { 
+    .mainHeaderMobile {
+      text-align: left;
+      font-size: 40px;
+      padding-top: 10px;
+      margin-left: 2vw;
+    }
+    }
+
   /*preemptive query for xxs phones, galaxy fold and others */
-  @media (max-width: 365px) { 
+  @media (max-width: 350px) { 
+    .mainHeaderMobile {
+      font-size: 30px;
+    }
+    .mobileNavbarButton {
+      top: 10px;
+    }
+    .navButton{
+      margin-top: 20px;
+      font-size: 12px;
+    }
+    .mobileDropdownButtonGroup.offcanvas-body {
+      padding: 0px;
+    }
     }

@@ -1,11 +1,10 @@
 import React from 'react';
-import { Col, Container, Navbar, Row } from 'react-bootstrap';
-import logo from '../../Img/Logo/td logo 2 22 22.png';
+import { HeaderProps } from '../../Script/Interfaces/Header';
 
 
-export default function MainHeader() {
+export default function MainHeader(props: HeaderProps) {
     return (
-        <div className='allComponentsWrapper header mainHeader'>
+        <div className={props.class}>
             <span className='headerBlue'>T</span>
             <span className='headerBlue'>O</span>
             <span className='headerBlue'>R</span>
