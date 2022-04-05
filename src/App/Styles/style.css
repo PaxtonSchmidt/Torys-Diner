@@ -14,11 +14,16 @@ f5ee9e
 off-white
 fdffff 
 
-dark-blue contrast
+dark-green contrast
 042a2b
 */
 a {
   text-decoration: none !important;
+  cursor: default;
+}
+
+p {
+  cursor: default;
 }
 
 h1 {
@@ -110,10 +115,10 @@ h1 {
 .footerIcon {
   height: 20px;
   width: 20px;
+  cursor: pointer;
 }
 
 .footerIconBackground {
-  background-color: #f5ee9e;
   border-radius: 50%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -122,24 +127,87 @@ h1 {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0px 0px 5px 5px;
-  padding: 2px 5px 4px 5px;
+  padding: 2px 5px 5px 6px;
   cursor: pointer;
   display: inline-block;
+  border: 2px solid #429aae;
+  background-color: #fdffff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footerIconBackground:hover {
+  background-color: #f5ee9e;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translateY(-2px) scale(1.1);
+          transform: translateY(-2px) scale(1.1);
 }
 
 .header {
+  font-weight: bolder;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: #ff7f11;
+  text-shadow: 2px 2px #042a2b;
+}
+
+.form {
+  background-color: white;
+}
+
+.inputRow {
+  width: 100%;
+  border: none;
+  font-family: 'Fredoka', Geneva, Tahoma, sans-serif;
+  color: #ff7f11;
+  font-weight: bold;
+}
+
+.inputField {
+  border: 2px solid #429aae;
+  border-radius: 10px;
+  width: 100%;
+  color: #429aae;
+  height: 40px;
+}
+
+.inputField:focus {
+  outline-color: #ff7f11;
+}
+
+textArea {
+  height: 200px !important;
+}
+
+.submit {
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  float: right;
+  color: #429aae;
+  text-shadow: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.submit:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(1.1) translateY(-2px);
+          transform: scale(1.1) translateY(-2px);
+  background-color: #f5ee9e;
+}
+
+.mainHeader {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   font-weight: bolder;
   letter-spacing: 2px;
   cursor: pointer;
-  color: #ff7f11;
-  -webkit-transition-property: opacity 10s;
-  transition-property: opacity 10s;
-  opacity: 0%;
-  -webkit-animation: illuminate 2s cubic-bezier(0, -3.06, 0, 0.88) forwards;
-          animation: illuminate 2s cubic-bezier(0, -3.06, 0, 0.88) forwards;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .mainHeaderDesktop {
@@ -148,8 +216,9 @@ h1 {
   margin-left: 2vw;
   font-size: 60px;
   padding-top: 10px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 100%;
 }
 
 .mainHeaderMobile {
@@ -157,8 +226,8 @@ h1 {
   margin-right: auto;
   width: 100%;
   font-size: 50px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .mugClubPic {
@@ -170,6 +239,33 @@ h1 {
   display: block;
 }
 
+.mugClubPicSm {
+  height: 50%;
+  position: relative;
+}
+
+.modalButton {
+  height: 35px;
+  top: 20px;
+  right: 8vw;
+  z-index: 1000;
+  background-color: #fdffff;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: #429aae;
+  border: 3px solid #429aae;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.modalButton:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translateY(-2px) scale(1.1);
+          transform: translateY(-2px) scale(1.1);
+  background-color: #f5ee9e;
+}
+
 .menuStyles {
   background-color: #2b3a67;
   padding: 30px;
@@ -179,6 +275,24 @@ h1 {
           justify-content: center;
   width: 100%;
   margin: 0%;
+  cursor: default;
+}
+
+.modalCloseButton {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.modalCloseButton:hover {
+  background-color: #f5ee9e;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(1.1) translateY(-2px);
+          transform: scale(1.1) translateY(-2px);
 }
 
 .mobileNavbarButton {
@@ -188,8 +302,15 @@ h1 {
   right: 8vw;
   z-index: 1000;
   background-color: #fdffff;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px #429aae;
+}
+
+.mobileNavbarButton:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translateY(-2px) scale(1.1);
+          transform: translateY(-2px) scale(1.1);
 }
 
 .mobileDropdownButtonGroup {
@@ -208,10 +329,22 @@ h1 {
   font-weight: bolder;
   font-family: 'Fredoka', Geneva, Tahoma, sans-serif;
   white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navButton:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #ff7f11;
+  -webkit-transform: translateY(-2px) scale(1.1);
+          transform: translateY(-2px) scale(1.1);
 }
 
 .photoTileContainer {
-  margin-top: 40px;
+  margin-top: 30vh;
+  margin-bottom: 10vh;
 }
 
 .photoTile {
@@ -223,12 +356,17 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-  -webkit-transition: -webkit-transform .1s;
-  transition: -webkit-transform .1s;
-  transition: transform .1s;
-  transition: transform .1s, -webkit-transform .1s;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.photoTile:hover {
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-transform: translateY(-1px) scale(1.01);
+          transform: translateY(-1px) scale(1.01);
 }
 
 .photoTileLg {
@@ -314,19 +452,52 @@ h1 {
   margin-bottom: 50px;
 }
 
+.subBannerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 210px 30px 0px 30px;
+  height: 600px;
+}
+
 .subBannerHalf1 {
-  height: 100%;
-  width: 50%;
   display: inline-block;
   background-color: #429aae;
 }
 
-.subBannerHalf2 {
+.subBannerHalf1Lg {
+  display: inline-block;
   height: 100%;
   width: 50%;
-  display: inline-block;
+  vertical-align: top;
+}
+
+.subBannerHalf1Sm {
+  display: block;
+  height: 50%;
+  width: 100%;
+}
+
+.subBannerHalf2 {
   background-color: #f5ee9e;
   position: relative;
+}
+
+.subBannerHalf2Lg {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+}
+
+.subBannerHalf2Sm {
+  display: block;
+  height: 50%;
+  width: 100%;
 }
 
 .tileText {
@@ -338,12 +509,14 @@ h1 {
 
 .welcomeCard {
   background-color: #fdffff;
-  border: 8px solid #042a2b;
   color: #ff7f11;
-  margin-bottom: 20px;
   border-radius: 20px;
-  height: 500px;
+  height: 250px;
   width: 100%;
+}
+
+.welcomeCardContainer {
+  margin-top: 20vh;
 }
 
 .welcomeCardImg {
@@ -373,43 +546,29 @@ h1 {
 }
 
 /*--Effects------------------------------------------------------------------------------------*/
-.photoTile:hover {
-  -webkit-transition: .2s linear;
-  transition: .2s linear;
-  -webkit-transform: translateY(-1px) scale(1.03);
-          transform: translateY(-1px) scale(1.03);
+@-webkit-keyframes rotateIn {
+  from {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
-
-.navButton:hover {
-  -webkit-transition: .2s;
-  transition: .2s;
-  text-shadow: 0 0 20px #ff7f11, 0 0 10px #ff7f11;
-  color: #ff7f11;
-}
-
-.headerBlue {
-  color: #ff7f11;
-}
-
-.headerPink {
-  color: #ff7f11;
-}
-
-@-webkit-keyframes illuminate {
-  100% {
-    opacity: 100%;
+@keyframes rotateIn {
+  from {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
-@keyframes illuminate {
-  100% {
-    opacity: 100%;
-  }
-}
-
-.header span:hover:nth-child(1) {
-  text-shadow: 0 0 20px #ff7f11, 0 0 10px #ff7f11;
-  color: #f2f3ae;
+.headerLetter {
+  color: #ff7f11;
 }
 
 /*-----------*/
@@ -458,6 +617,9 @@ h1 {
   .welcomeCard {
     max-width: 450px;
   }
+  .subBannerText {
+    padding-top: 60px;
+  }
 }
 
 /*bootstrap extra-small breakpoint*/
@@ -484,16 +646,14 @@ h1 {
 @media (max-width: 510px) {
   .mainHeaderMobile {
     text-align: left;
-    font-size: 40px;
-    padding-top: 10px;
     margin-left: 2vw;
   }
 }
 
-/*preemptive query for xxs phones, galaxy fold and others */
-@media (max-width: 350px) {
+@media (max-width: 410px) {
   .mainHeaderMobile {
     font-size: 30px;
+    padding-top: 10px;
   }
   .mobileNavbarButton {
     top: 10px;

@@ -2,36 +2,37 @@ import React from 'react';
 import { Col, Row, Container } from 'react-bootstrap';
 import WelcomeCard from './WelcomeCard';
 import food from '../../Img/About/food close up.png'
+import MenuModal from '../Menu/MenuModal';
+import ContactModal from '../ContactUs/ContactModal';
 
 export default function WelcomeCardsContainer() {
     return (
-        <Container>
-                <Row style={{textAlign: 'center'}}>
+        <Container id='Menu' className='welcomeCardContainer' >
+                <Row id='Contact' style={{textAlign: 'center'}}>
                     <Col>
                         <div >
-                            <p className='bannerText fadesAtLGViewport' style={{paddingTop: '100px', marginBottom: '0px'}}>Torys Diner is</p>
-                            <h1 className='header' >Bringing a little bit of home to your morning</h1>
-                            <p className='bannerText fadesAtLGViewport'>at Hotel Isla Verde</p>
+                            <h1 className='header' >Classic diner food made for you in Boquete</h1>
+                            <p className='bannerText fadesAtLGViewport' style={{paddingTop: '0px'}}>Come to Tory's Diner and try our delicious, classic American breakfast! Made to order with fresh ingredients right as soon as you come in! Enjoy a meal, chat with friends and eat some delicious food that takes you home.</p>
                         </div>
                     </Col>
                 </Row>
                 <Row className='welcomeCardRow' style={{justifyContent: 'center', textAlign: 'center'}}>
-                    <Col xs={10} sm={6} md={6} lg={5} xl={4} >
+                    <Col xs={6} sm={5} md={4} lg={3} >
                         <div >
                             <WelcomeCard 
                                 src={food}
                                 header='Menu'
                                 subHeader='See if we have what youre lookin for!'
-                                destinaton='#Menu'
+                                button={<MenuModal />}
                                 />
                         </div>
                     </Col>
-                    <Col xs={10} sm={6} md={6} lg={5} xl={4}>
+                    <Col xs={6} sm={5} md={4} lg={3}>
                         <WelcomeCard 
                             src={food}
                             header='Contact'
                             subHeader='Reach out and work with us!'
-                            destinaton='#Menu'
+                            button={<ContactModal />}
                             />
                     </Col>
                 </Row>

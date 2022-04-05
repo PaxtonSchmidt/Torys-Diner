@@ -4,6 +4,7 @@ import PhotoTileArrayLg from './PhotoTileArrayDesktop';
 import getViewportWidth from '../../Script/GetViewportWidth';
 
 export default function PhotoTileArray() {
+    
     let viewportWidth: number = getViewportWidth();
     const [width, setWidth] = useState(viewportWidth);
     let size: string = '';

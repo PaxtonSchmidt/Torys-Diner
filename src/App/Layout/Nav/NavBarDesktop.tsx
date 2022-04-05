@@ -11,7 +11,7 @@ export default function NavBarDesktop() {
     return (     
     <Container fluid className='allComponentsWrapper' style={{position:'relative'}}>
         <Row > 
-            <MainHeader class='mainHeaderDesktop header'/>
+            <MainHeader class='mainHeaderDesktop mainHeader'/>
             <div style={{width: '100%', justifyContent: 'right'}}>
                 <ButtonGroup style={{height: '50px', paddingTop: '50px', marginRight: '3vw', float: 'right'}}>
                     <Button href='#Menu' className='shadow-none' style={{width: 'fit-content', padding: '0px', backgroundColor: 'transparent', border: 'none', textAlign: 'right'}}>

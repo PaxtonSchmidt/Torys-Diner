@@ -11,7 +11,7 @@ export default function NavBarMobile() {
 
     return (     
         <Container fluid className='allComponentsWrapper' style={{position:'relative', textAlign: 'center', height: 'fit-content'}}>
-            <MainHeader class='mainHeaderMobile header' />
+            <MainHeader class='mainHeaderMobile mainHeader' />
             <MobileNavBarButton show={show} onClick={handleToggle}/>
             
             <MobileNavBarDropdown show={show} onClick={handleToggle}/>
