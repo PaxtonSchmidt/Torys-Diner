@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
 import { PhotoTileProps } from '../../Script/Interfaces/PhotoTile';
 
 export default function PhotoTile(props: PhotoTileProps) {

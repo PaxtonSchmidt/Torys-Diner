@@ -1,18 +1,17 @@
 import React from 'react';
-import { Col, Container, Row, Image } from 'react-bootstrap';
 import { WelcomeCardProps } from '../../Script/Interfaces/WelcomeCard';
 
 export default function WelcomeCard(props: WelcomeCardProps) {
     return (  
         <div className='welcomeCard'>
-            <div style={{height: '45%', marginTop: '15%', textAlign: 'center'}}>
-                <h1 className='header' style={{marginBottom: '0px'}}>{props.header}</h1>
-                <p style={{color:'#429aae', fontWeight: 'bolder'}}>{props.subHeader}</p>
-                
+            <div style={{height: 'fit-content', marginTop: '15%', textAlign: 'center', marginBottom: '10px'}}>
+                <h1 className='header welcomeCardHeader' style={{marginBottom: '0px'}}>{props.header}</h1>
+                <p style={{color:'#429aae', fontWeight: 'bolder', marginBottom: '0px'}}>{props.subHeader}</p>
+                <div style={{alignContent: 'bottom'}}>
+                    {props.button}
+                </div>
             </div>
-            <div>
-                {props.button}
-            </div>
+            
         </div>
            
     );

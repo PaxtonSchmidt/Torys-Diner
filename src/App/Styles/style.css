@@ -99,14 +99,6 @@ h1 {
           justify-content: center;
 }
 
-.checkerBG {
-  border-radius: 20px 20px 0 0;
-  background-color: white;
-  background-image: linear-gradient(45deg, #1b1b1e 25%, transparent 25%), linear-gradient(-45deg, #1b1b1e 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #1b1b1e 75%), linear-gradient(-45deg, transparent 75%, #1b1b1e 75%);
-  background-size: 40px 40px;
-  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
-}
-
 .footer {
   bottom: 0;
   position: fixed;
@@ -147,13 +139,17 @@ h1 {
 .header {
   font-weight: bolder;
   letter-spacing: 2px;
-  cursor: pointer;
+  cursor: default;
   color: #ff7f11;
   text-shadow: 2px 2px #042a2b;
 }
 
 .form {
   background-color: white;
+}
+
+.geoButton {
+  cursor: pointer;
 }
 
 .inputRow {
@@ -205,9 +201,10 @@ textArea {
   height: fit-content;
   font-weight: bolder;
   letter-spacing: 2px;
-  cursor: pointer;
+  cursor: default;
   -webkit-transition: .3s;
   transition: .3s;
+  color: #ff7f11;
 }
 
 .mainHeaderDesktop {
@@ -441,6 +438,10 @@ textArea {
   position: absolute;
 }
 
+.subHeader {
+  font-size: 50px;
+}
+
 .subBanner {
   width: 100%;
   height: 600px;
@@ -508,15 +509,16 @@ textArea {
 }
 
 .welcomeCard {
-  background-color: #fdffff;
+  background-color: transparent;
   color: #ff7f11;
   border-radius: 20px;
-  height: 250px;
+  height: 125px;
   width: 100%;
+  text-align: center;
 }
 
-.welcomeCardContainer {
-  margin-top: 20vh;
+.welcomeCardHeader {
+  font-size: 30px !important;
 }
 
 .welcomeCardImg {
@@ -543,47 +545,6 @@ textArea {
 .welcomeCarouselImg {
   width: 100%;
   height: 100%;
-}
-
-/*--Effects------------------------------------------------------------------------------------*/
-@-webkit-keyframes rotateIn {
-  from {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-@keyframes rotateIn {
-  from {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-.headerLetter {
-  color: #ff7f11;
-}
-
-/*-----------*/
-/*-----------*/
-/*-----------*/
-/*-----------*/
-/*-----------*/
-/*-----------*/
-/*-----------*/
-/*-----------*/
-/*-----------*/
-/*-----------*/
-/*-----------*/
-.CarouselSmallViewport {
-  display: none;
 }
 
 /*--Media Queries------------------------------------------------------------------------------*/
@@ -620,6 +581,12 @@ textArea {
   .subBannerText {
     padding-top: 60px;
   }
+  .subHeader {
+    font-size: 30px;
+  }
+  .header {
+    text-shadow: 2px 1px #042a2b;
+  }
 }
 
 /*bootstrap extra-small breakpoint*/
@@ -640,9 +607,6 @@ textArea {
   }
 }
 
-/*researched thinnest breakpoint to design for
-  @media (max-width: 320) {}
-  */
 @media (max-width: 510px) {
   .mainHeaderMobile {
     text-align: left;

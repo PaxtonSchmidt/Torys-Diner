@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Col, Container, Modal, Row } from 'react-bootstrap';
+import {Container, Modal} from 'react-bootstrap';
 import PhotoTile from './PhotoTile';
-import banner from '../../Img/About/banner.png';
 
 
 export default function PhotoTileArrayMobile() {
@@ -14,7 +13,7 @@ export default function PhotoTileArrayMobile() {
     <>
         <Modal show={show} onHide={handleClose} size='lg' style={{width: '100%', backgroundColor: 'rgba(255, 127, 17, 0.5)'}} centered>
             <Modal.Body style={{border: '3px solid #429aae', borderRadius: '4px', textAlign: 'center'}}>
-                <h1 style={{color: '#ff7f11',fontFamily: 'Fredoka, Geneva, Tahoma, sans-serif'}}>Would you like to go to our Facebook page?</h1>
+                <h1 style={{color: '#429aae',fontFamily: 'Fredoka, Geneva, Tahoma, sans-serif'}}>Would you like to go to our Facebook page?</h1>
                 <button className='modalButton' style={{cursor: 'pointer'}}>
                     <a href='https://www.facebook.com/Torys-Diner-105878168253164' style={{height: '100%', color: '#429aae'}}>
                         Go!

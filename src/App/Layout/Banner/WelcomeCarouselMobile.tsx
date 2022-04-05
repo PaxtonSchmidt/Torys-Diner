@@ -1,10 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import lobbyBig from '../../Img/About/lobbyBig.png';
-import lobby from '../../Img/About/lobby.png';
 import banner from '../../Img/About/banner.png';
-import bannerSmall from '../../Img/About/bannerSmall.png';
-import closeUp from '../../Img/About/food close up.png';
 
 
 

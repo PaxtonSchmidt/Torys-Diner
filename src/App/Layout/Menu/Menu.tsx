@@ -1,6 +1,5 @@
 import React from 'react';
-import { Accordion, Card, Col, Container, Row } from 'react-bootstrap';
-import detail from '../../Img/Menu/TDdetail.svg';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 
 export default function Menu() {
     return(

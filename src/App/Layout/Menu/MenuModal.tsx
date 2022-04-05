@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import MenuContainer from './MenuContainer';
 import closeX from '../../Img/Icons/x-circle.svg';
 

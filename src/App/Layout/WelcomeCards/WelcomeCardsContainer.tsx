@@ -7,12 +7,12 @@ import ContactModal from '../ContactUs/ContactModal';
 
 export default function WelcomeCardsContainer() {
     return (
-        <Container id='Menu' className='welcomeCardContainer' >
+        <Container id='Menu' >
                 <Row id='Contact' style={{textAlign: 'center'}}>
                     <Col>
                         <div >
-                            <h1 className='header' >Classic diner food made for you in Boquete</h1>
-                            <p className='bannerText fadesAtLGViewport' style={{paddingTop: '0px'}}>Come to Tory's Diner and try our delicious, classic American breakfast! Made to order with fresh ingredients right as soon as you come in! Enjoy a meal, chat with friends and eat some delicious food that takes you home.</p>
+                            <h1 className='header mainHeader subHeader'>Classic food made for you in Boquete!</h1>
+                            
                         </div>
                     </Col>
                 </Row>
@@ -31,9 +31,16 @@ export default function WelcomeCardsContainer() {
                         <WelcomeCard 
                             src={food}
                             header='Contact'
-                            subHeader='Reach out and work with us!'
+                            subHeader='Reserve a table or send us a message!'
                             button={<ContactModal />}
                             />
+                    </Col>
+                    <Col xs={6} lg={3} >
+                        <WelcomeCard 
+                            src={food}
+                            header='Hours'
+                            subHeader='8am to 2pm Wednesday through Friday. 8am to 12pm on Saturday and Sunday'
+                          />
                     </Col>
                 </Row>
         </Container>  

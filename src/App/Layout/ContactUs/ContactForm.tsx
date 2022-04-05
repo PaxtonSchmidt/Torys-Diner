@@ -1,4 +1,4 @@
-import React, { ReactEventHandler, useRef } from 'react';
+import React from 'react';
 import emailjs from 'emailjs-com'
 import { Col, Row } from 'react-bootstrap';
 import { ContactFormProps } from '../../Script/Interfaces/ContactFormProps';
