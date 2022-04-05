@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Col, Container, Modal} from 'react-bootstrap';
+import { Container, Modal} from 'react-bootstrap';
 import PhotoTile from './PhotoTile';
 
 

@@ -10,12 +10,12 @@ export default function welcomeCarouselMobile() {
         <Carousel  className='welcomeCarousel'>
             <Carousel.Item>
                 <div className='carouselImgDiv'>
-                    <img src={banner} className='welcomeCarouselImg' />
+                    <img alt='Torys Diner Banner' src={banner} className='welcomeCarouselImg' />
                 </div>
             </Carousel.Item>
             <Carousel.Item>
                 <div className='carouselImgDiv'>
-                    <img src={lobbyBig} className='welcomeCarouselImg' />
+                    <img alt='Lobby Picture' src={lobbyBig} className='welcomeCarouselImg' />
                 </div>
             </Carousel.Item>
         </Carousel>

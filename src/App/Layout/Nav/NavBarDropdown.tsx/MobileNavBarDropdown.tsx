@@ -1,7 +1,6 @@
  import React from 'react';
 import { Button, ButtonGroup, Offcanvas } from 'react-bootstrap';
 import { MobileNavbarProps } from '../../../Script/Interfaces/MobileNavbarProps';
-import cup from '../../../Img/Icons/cup.svg';
 
 export default function MobileNavBarDropdown(props: MobileNavbarProps){
     

@@ -18,7 +18,7 @@ export default function MenuModal() {
                 <Modal.Body style={{border: '3px solid #429aae', borderRadius: '4px'}}>
                     <div  style={{textAlign: 'end', width: '100%'}}>
                         <button onClick={handleClose} style={{border: 'none', padding: '0px', backgroundColor: 'white'}}>
-                            <img src={closeX} className='modalCloseButton' />
+                            <img alt='close button' src={closeX} className='modalCloseButton' />
                         </button>
                     </div>
                     <MenuContainer />

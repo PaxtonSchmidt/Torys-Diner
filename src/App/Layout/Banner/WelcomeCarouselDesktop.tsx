@@ -10,12 +10,12 @@ export default function welcomeCarouselDesktop() {
         <Carousel className='welcomeCarousel CarouselLargeViewport'> 
             <Carousel.Item className='CarouselImgLg'>
                 <div className='carouselImgDiv'>
-                    <img src={bannerSmall} className='welcomeCarouselImg' />
+                    <img alt='Torys Diner Banner' src={bannerSmall} className='welcomeCarouselImg' />
                 </div>
             </Carousel.Item>
             <Carousel.Item className='CarouselImgLg'>
                 <div className='carouselImgDiv'>
-                    <img src={lobby} className='welcomeCarouselImg' />
+                    <img alt='Lobby picture' src={lobby} className='welcomeCarouselImg' />
                 </div>
             </Carousel.Item >
         </Carousel>
