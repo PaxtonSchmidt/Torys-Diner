@@ -141,7 +141,7 @@ h1 {
   letter-spacing: 2px;
   cursor: default;
   color: #ff7f11;
-  text-shadow: 2px 2px #042a2b;
+  text-shadow: 1px 1px #042a2b;
 }
 
 .form {
@@ -583,9 +583,6 @@ textArea {
   }
   .subHeader {
     font-size: 30px;
-  }
-  .header {
-    text-shadow: 2px 1px #042a2b;
   }
 }
 

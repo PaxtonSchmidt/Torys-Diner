@@ -8,7 +8,7 @@ import ContactModal from '../ContactUs/ContactModal';
 export default function WelcomeCardsContainer() {
     return (
         <Container id='Menu' >
-                <Row id='Contact' style={{textAlign: 'center'}}>
+                <Row id='Contact' style={{textAlign: 'center', marginTop: '30px'}}>
                     <Col>
                         <div >
                             <h1 className='header mainHeader subHeader'>Classic food made for you in Boquete!</h1>
@@ -35,7 +35,7 @@ export default function WelcomeCardsContainer() {
                             button={<ContactModal />}
                             />
                     </Col>
-                    <Col xs={6} lg={3} >
+                    <Col xs={8} lg={3} >
                         <WelcomeCard 
                             src={food}
                             header='Hours'
